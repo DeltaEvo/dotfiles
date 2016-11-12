@@ -1,0 +1,6 @@
+#!/bin/bash
+case $BLOCK_BUTTON in
+    1) xdg-open "https://github.com";;
+esac
+. "$HOME/i3.env"
+curl -s -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/notifications | jq '. | length'

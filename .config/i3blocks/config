@@ -1,0 +1,53 @@
+# Global properties
+# Colors from https://yeun.github.io/open-color/
+command=$HOME/.config/i3blocks/scripts/$BLOCK_NAME
+separator_block_width=5
+border_top=0
+border_left=0
+border_right=0
+border_bottom=2
+separator=false
+
+[github]
+label=
+interval=300
+
+[volume]
+label=
+interval=1
+# Gray
+border=#868e96
+
+[load]
+interval=1
+label=
+# Red
+border=#fa5252
+
+[disk]
+label=
+interval=30
+# Grape
+border=#be4bdb
+
+[iface]
+interval=1
+# Blue
+border=#228ae6
+
+[ip]
+interval=once
+# Green
+border=#40c057
+
+[ping]
+label=
+interval=2
+# Yellow
+border=#fab005
+
+[time]
+command=date '+%A %d %B %H:%M:%S'
+interval=1
+# Orange
+border=#fd7e14
