@@ -12,7 +12,7 @@
 !.config/i3blocks/
 
 # vim and neovim
-!.config/nvim/
+!.config/nvim
 !.vim/
 !.vimrc
 
