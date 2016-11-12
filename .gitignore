@@ -1,8 +1,9 @@
 # Ignore everything
 /*
 
+# include .config
 !/.config
-
+# exclude all in .config
 .config/*
 
 # i3
@@ -20,5 +21,3 @@
 !.config/fish/
 
 !.gitignore
-
-
