@@ -15,6 +15,7 @@
 !.config/albert/
 !.config/i3/
 !.config/i3blocks/
+!.wallpaper.png
 
 # vim and neovim
 !.config/nvim
@@ -27,3 +28,4 @@
 
 # git
 !.gitconfig
+
