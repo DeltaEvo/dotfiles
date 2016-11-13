@@ -21,3 +21,4 @@
 !.config/fish/
 
 !.gitignore
+!.gitmodules
