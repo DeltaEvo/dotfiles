@@ -1,6 +1,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" Add pathogen to path
+set rtp+=~/.vim/bundle/vim-pathogen
 execute pathogen#infect()
 
 filetype plugin indent on
