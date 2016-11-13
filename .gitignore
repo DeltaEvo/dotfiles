@@ -1,8 +1,13 @@
 # Ignore everything
 /*
 
+# git repo files
+!.gitignore
+!.gitmodules
+
 # include .config
 !/.config
+
 # exclude all in .config
 .config/*
 
@@ -20,5 +25,5 @@
 !.config/omg/
 !.config/fish/
 
-!.gitignore
-!.gitmodules
+# git
+!.gitconfig
