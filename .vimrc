@@ -13,6 +13,8 @@ syntax on
 colorscheme monokai
 
 set number
+" Set powerline font
+let g:airline_powerline_fonts = 1
 " Start NERDTree
 let g:nerdtree_tabs_open_on_console_startup=1
 
