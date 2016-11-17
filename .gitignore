@@ -29,3 +29,6 @@
 # git
 !.gitconfig
 
+# include Xresources
+!.Xresources
+!.Xresources.d/
