@@ -4,14 +4,24 @@ filetype off                  " required
 " Add pathogen to path
 set rtp+=~/.vim/bundle/vim-pathogen
 execute pathogen#infect()
+Helptags
 
 " Use system clipboard
 set clipboard=unnamedplus
 
 filetype plugin indent on
 syntax on
-
 colorscheme monokai
+set background=dark
+
+" Indent
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_exclude_filetypes = ['nerdtree']
+set ts=2 sw=2 et
+hi IndentGuidesOdd  ctermbg=black
+hi IndentGuidesEven ctermbg=darkgrey
+
+
 let g:airline_theme='powerlineish'
 
 set number
