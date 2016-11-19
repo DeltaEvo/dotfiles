@@ -16,7 +16,7 @@ set background=dark
 
 " Indent
 let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_exclude_filetypes = ['nerdtree']
+let g:indent_guides_exclude_filetypes = ['nerdtree' , 'startify']
 set ts=2 sw=2 et
 hi IndentGuidesOdd  ctermbg=black
 hi IndentGuidesEven ctermbg=darkgrey
@@ -27,8 +27,12 @@ let g:airline_theme='powerlineish'
 set number
 " Set powerline font
 let g:airline_powerline_fonts = 1
-" Start NERDTree
-let g:nerdtree_tabs_open_on_console_startup=1
+
+" Use Ctrl+T for NERDTree
+map <silent> <C-t> :NERDTreeToggle<CR>
+
+" Close NERDTree when it's the last buffer
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Syntastic
 set statusline+=%#warningmsg#
