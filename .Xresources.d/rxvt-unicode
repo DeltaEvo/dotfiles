@@ -1,5 +1,5 @@
 urxvt.depth:                   32
-URxvt.font:                    xft:Roboto Mono for Powerline:size=11
+URxvt.font:                    xft:Hasklig Nerd Font:size=11
 
 !Scroll bar       
 URxvt.scrollColor:             #444444

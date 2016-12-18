@@ -9,7 +9,7 @@
 !/.config
 
 # exclude all in .config
-.config/*
+/.config/*
 
 # i3
 !.config/albert/
@@ -32,3 +32,10 @@
 # include Xresources
 !.Xresources
 !.Xresources.d/
+
+# include fonts
+!/.local
+/.local/*
+!/.local/share
+/.local/share/*
+!/.local/share/fonts
