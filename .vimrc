@@ -47,3 +47,5 @@ let g:syntastic_rust_checkers = ['rustc']
 " YouCompleteMe params
 let rust_root = systemlist('rustc --print sysroot')[0]
 let g:ycm_rust_src_path = rust_root . '/lib/rustlib/src/rust/src'
+" Vim Hard Time ;(
+let g:hardtime_default_on = 1
