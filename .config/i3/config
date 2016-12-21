@@ -224,6 +224,9 @@ bar {
 	}
 }
 
+# Remove border
+new_window pixel 2
+
 # Gaps
 gaps inner 4
 gaps outer 2

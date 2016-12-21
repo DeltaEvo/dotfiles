@@ -8,9 +8,15 @@ border_right=0
 border_bottom=2
 separator=false
 
+[window]
+command=xtitle -s
+interval=persist
+separator=true
+separator_block_width=45
+
 [github]
 label=
-interval=300
+interval=persist
 
 [volume]
 label=
