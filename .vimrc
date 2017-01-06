@@ -39,13 +39,12 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_rust_checkers = ['rustc']
+" Neomake
+autocmd! BufWritePost * Neomake
+
 " YouCompleteMe params
 let rust_root = systemlist('rustc --print sysroot')[0]
 let g:ycm_rust_src_path = rust_root . '/lib/rustlib/src/rust/src'
 " Vim Hard Time ;(
 let g:hardtime_default_on = 1
+let g:hardtime_ignore_buffer_patterns = [ "NERD.*" ]
