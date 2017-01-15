@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=Monokai
-Font=FuraCode Nerd Font,10,-1,5,57,0,0,0,0,0
+Font=FuraCode Nerd Font,11,-1,5,50,0,0,0,0,0
 
 [General]
 Name=Default
