@@ -39,3 +39,4 @@
 !/.local/share
 /.local/share/*
 !/.local/share/fonts
+!/.local/share/konsole

@@ -33,7 +33,8 @@ font pango:System San Francisco Display 10, Awesome 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+t exec i3-sensible-terminal
+# bindsym $mod+t exec i3-sensible-terminal
+bindsym $mod+t exec konsole
 
 # kill focused window
 bindsym $mod+Shift+Q kill
