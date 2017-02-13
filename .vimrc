@@ -16,7 +16,7 @@ endif
 
 filetype plugin indent on
 syntax on
-colorscheme monokai
+colorscheme molokai
 set t_Co=256
 set relativenumber 
 set number
