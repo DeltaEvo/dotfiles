@@ -21,6 +21,8 @@
 !.config/nvim
 !.vim/
 !.vimrc
+# exclude bundles
+.vim/bundles
 
 # fish
 !.config/omg/
