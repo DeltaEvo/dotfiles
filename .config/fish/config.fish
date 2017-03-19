@@ -11,3 +11,5 @@ source $OMF_PATH/init.fish
 
 # RLS
 export LD_LIBRARY_PATH=( rustc --print sysroot )/lib
+
+fish_vi_key_bindings
