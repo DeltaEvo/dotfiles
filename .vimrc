@@ -2,25 +2,20 @@ if &compatible
 	set nocompatible
 endif
 
-set runtimepath+=~/.vim/dein.vim
+source ~/.vim/vim-plug/plug.vim
 
-let plugin_path = expand('~/.vim/bundles')
-if dein#load_state(plugin_path)
-	call dein#begin(plugin_path)
+call plug#begin('~/.vim/bundles')
 	source ~/.vim/plugins.vim
+call plug#end()
 
-	call dein#end()
-	call dein#save_state()
-endif
-
-filetype plugin indent on
 syntax on
 colorscheme molokai
 set t_Co=256
 set relativenumber 
 set number
 set noexpandtab
-set preserveindent
+set autoindent
 set shiftwidth=2
 set tabstop=2
 set list lcs=tab:\|\ 
+

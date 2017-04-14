@@ -233,7 +233,7 @@ gaps inner 4
 gaps outer 2
 
 #Start albert
-exec --no-startup-id albert -k "^" &
+exec --no-startup-id albert &
 
 # Show albert
 bindsym $mod+d exec --no-startup-id albert toggle

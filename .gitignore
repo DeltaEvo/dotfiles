@@ -22,7 +22,7 @@
 !.vim/
 !.vimrc
 # exclude bundles
-.vim/bundles
+.vim/bundles/
 
 # fish
 !/.config/omg/

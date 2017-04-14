@@ -1,23 +1,28 @@
-call dein#add('tomasr/molokai')
-call dein#add('Shougo/deoplete.nvim') 
-call dein#add('Shougo/denite.nvim')
-call dein#add('mhinz/vim-startify')
-call dein#add('scrooloose/nerdtree' , { 'on_cmd': 'NERDTreeToggle' })
-call dein#add('Xuyuanp/nerdtree-git-plugin', { 'on_cmd': 'NERDTreeToggle' })
-call dein#add('ryanoasis/vim-devicons')
-call dein#add('vim-airline/vim-airline')
-call dein#add('vim-airline/vim-airline-themes')
-call dein#add('neomake/neomake')
-call dein#add('ctrlpvim/ctrlp.vim')
+Plug 'tomasr/molokai'
+Plug 'roxma/nvim-completion-manager' 
+Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'mhinz/vim-startify'
+Plug 'scrooloose/nerdtree' , { 'on': 'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
+Plug 'ryanoasis/vim-devicons'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'neomake/neomake', { 'on': 'Neomake' }
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'autozimu/LanguageClient-neovim' , { 'do': ':UpdateRemotePlugins' }
+Plug 'critiqjo/lldb.nvim', { 'for': ['rust'] }
 
-call dein#add('autozimu/LanguageClient-neovim' , { 'on_ft': ['rust'] })
-call dein#add('critiqjo/lldb.nvim', { 'on_ft': ['rust'] })
+" Syntaxes
+Plug 'pangloss/vim-javascript'
+Plug 'posva/vim-vue'
+Plug 'rust-lang/rust.vim'
 
 " Rust
-let rust = { 'on_ft': 'rust' }
-call dein#add('rust-lang/rust.vim', rust)
-call dein#add('racer-rust/vim-racer', rust)
+Plug 'racer-rust/vim-racer'
+Plug 'roxma/nvim-cm-racer'
 
 " Javascript
-let javascript = { 'on_ft': 'javascript' }
-call dein#add('carlitux/deoplete-ternjs', javascript)
+
+

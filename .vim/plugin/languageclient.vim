@@ -1,5 +1,5 @@
 set hidden
 
 let g:LanguageClient_serverCommands = {
-    \ 'rust': ['rls'],
+    \ 'rust': ['/home/david/.cargo/bin/rls'],
     \ }
