@@ -29,6 +29,11 @@
 !/.config/fish/
 .config/fish/fishd.*
 
+# tmux
+.tmux
+!.tmux/tpm
+!.tmux.conf
+
 # git
 !.gitconfig
 

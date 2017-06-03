@@ -9,7 +9,8 @@ call plug#begin('~/.vim/bundles')
 call plug#end()
 
 syntax on
-colorscheme molokai
+colorscheme space-vim-dark
+
 set t_Co=256
 set relativenumber 
 set number

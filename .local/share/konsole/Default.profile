@@ -1,16 +1,16 @@
 [Appearance]
 AntiAliasFonts=true
-BoldIntense=true
+BoldIntense=false
 ColorScheme=Monokai
-Font=Fira Code,11,-1,5,50,0,0,0,0,0,Regular
-UseFontLineChararacters=false
+Font=Fira Code,11,-1,5,75,0,0,0,0,0,Bold
+UseFontLineChararacters=true
 
 [Cursor Options]
 CursorShape=0
 
 [General]
 Name=Default
-Parent=FALLBACK/
+Parent=/home/david/.local/share/konsole/Default.profile
 
 [Scrolling]
 HistoryMode=2

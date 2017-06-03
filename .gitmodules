@@ -1,3 +1,6 @@
 [submodule ".vim/vim-plug"]
 	path = .vim/vim-plug
 	url = https://github.com/junegunn/vim-plug.git
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
