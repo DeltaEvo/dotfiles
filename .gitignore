@@ -11,6 +11,9 @@
 # exclude all in .config
 /.config/*
 
+# nixpkgs
+!.config/nixpkgs
+
 # i3
 !.config/albert/
 !.config/i3/

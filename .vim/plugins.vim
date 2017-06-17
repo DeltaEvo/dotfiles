@@ -23,6 +23,7 @@ Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'pangloss/vim-javascript'
 Plug 'posva/vim-vue'
 Plug 'rust-lang/rust.vim'
+Plug 'LnL7/vim-nix'
 
 " Rust
 Plug 'racer-rust/vim-racer'
