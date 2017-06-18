@@ -24,7 +24,7 @@ in
     polybar
     fortune
     ponysay
-#    firefox-devedition-bin
+    chromium
     thunderbird
     rustup
     neovim
