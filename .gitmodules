@@ -5,5 +5,5 @@
 	path = .tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
 [submodule "/home/david/.config/nixpkgs/home-manager"]
-	path = /home/david/.config/nixpkgs/home-manager
+	path = .config/nixpkgs/home-manager
 	url = https://github.com/rycee/home-manager.git
