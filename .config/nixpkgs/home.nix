@@ -2,7 +2,7 @@
 
 let 
   polybar = pkgs.polybar.override { i3GapsSupport = true; githubSupport = true; mpdSupport = true; };
-
+  minecraft = pkgs.minecraft.override { useAlsa = true; };
 in
 {
   home.packages = with pkgs; [
