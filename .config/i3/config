@@ -236,4 +236,4 @@ bindsym $mod+d exec --no-startup-id albert toggle
 exec --no-startup-id Discord
 exec --no-startup-id redshift
 
-exec_always --no-startup-id feh --bg-max --no-xinerama $wallpaper
+exec_always --no-startup-id feh --bg-fill --no-xinerama $wallpaper
