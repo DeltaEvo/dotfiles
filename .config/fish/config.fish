@@ -9,6 +9,8 @@ set -q XDG_DATA_HOME
 # Load oh-my-fish configuration.
 source $OMF_PATH/init.fish
 
+alias vim=nvim
+
 # RLS
 export LD_LIBRARY_PATH=( rustc --print sysroot )/lib
 

@@ -1,6 +1,7 @@
 Plug 'liuchengxu/space-vim-dark'
-Plug 'roxma/nvim-completion-manager' 
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/echodoc.vim'
 Plug 'mhinz/vim-startify'
 Plug 'scrooloose/nerdtree' , { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
@@ -14,6 +15,7 @@ Plug 'honza/vim-snippets'
 Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
 Plug 'critiqjo/lldb.nvim', { 'for': ['rust'] }
 Plug 'vim-scripts/AfterColors.vim'
+Plug 'ludovicchabant/vim-gutentags'
 
 " tmux
 Plug 'tmux-plugins/vim-tmux'
@@ -24,11 +26,5 @@ Plug 'pangloss/vim-javascript'
 Plug 'posva/vim-vue'
 Plug 'rust-lang/rust.vim'
 Plug 'LnL7/vim-nix'
-
-" Rust
-Plug 'racer-rust/vim-racer'
-Plug 'roxma/nvim-cm-racer'
-
-" Javascript
 
 

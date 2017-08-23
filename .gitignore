@@ -26,6 +26,8 @@
 !.vimrc
 # exclude bundles
 .vim/bundles/
+.vim/langservers/*
+!.vim/langservers/install.sh
 
 # fish
 !/.config/omg/
