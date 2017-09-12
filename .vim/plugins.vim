@@ -1,6 +1,6 @@
 Plug 'liuchengxu/space-vim-dark'
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'roxma/nvim-completion-manager', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/echodoc.vim'
 Plug 'mhinz/vim-startify'
 Plug 'scrooloose/nerdtree' , { 'on': 'NERDTreeToggle' }

@@ -12,6 +12,6 @@ source $OMF_PATH/init.fish
 alias vim=nvim
 
 # RLS
-export LD_LIBRARY_PATH=( rustc --print sysroot )/lib
+export RUST_SRC_PATH=$HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src
 
 fish_vi_key_bindings
