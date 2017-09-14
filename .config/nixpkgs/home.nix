@@ -6,9 +6,10 @@ let
 in
 {
   home.packages = with pkgs; [
-    arc-theme
+#    arc-theme
     htop
     ntfs3g
+    nodejs-8_x
     tmux
     acpi
     powertop
@@ -33,6 +34,18 @@ in
     discord
     tdesktop
     minecraft
+    yubikey-personalization-gui
+    wget
+    yubioath-desktop
+    valgrind
+    cmatrix
+    unrar
+    unzip
+    spotify
+    lxqt.qterminal
+    universal-ctags
+    conky
+    i3lock
   ];
   gtk = {
     enable = true;
