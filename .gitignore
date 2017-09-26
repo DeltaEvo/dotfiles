@@ -5,6 +5,9 @@
 !.gitignore
 !.gitmodules
 
+# Avoid tags generation
+!.notags
+
 # include .config
 !/.config
 
