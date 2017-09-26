@@ -11,6 +11,9 @@ call plug#end()
 syntax on
 colorscheme space-vim-dark
 
+" Transparent background
+hi Normal guibg=NONE ctermbg=NONE
+
 set t_Co=256
 set relativenumber 
 set number
