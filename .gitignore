@@ -28,6 +28,7 @@
 .vim/bundles/
 .vim/langservers/*
 !.vim/langservers/install.sh
+!.vim/langservers/downloadSchemas.js
 
 # fish
 !/.config/omg/
