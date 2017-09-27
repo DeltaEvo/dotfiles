@@ -22,3 +22,5 @@ set autoindent
 set shiftwidth=2
 set tabstop=2
 set list lcs=tab:\|\ 
+set cursorcolumn
+set cursorline
