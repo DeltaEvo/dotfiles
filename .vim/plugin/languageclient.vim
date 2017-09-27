@@ -19,3 +19,9 @@ augroup JSON_Schemas
 	autocmd!
 	autocmd User LanguageClientStarted if &ft == "json" | call LoadSchemas() | endif
 augroup END
+
+augroup LanguageClient_config
+	autocmd!
+	autocmd User LanguageClientStarted setlocal signcolumn=yes
+	autocmd User LanguageClientStopped setlocal signcolumn=auto
+augroup END
