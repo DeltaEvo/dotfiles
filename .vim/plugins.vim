@@ -26,5 +26,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'posva/vim-vue'
 Plug 'rust-lang/rust.vim'
 Plug 'LnL7/vim-nix'
+Plug 'jparise/vim-graphql'
 
 

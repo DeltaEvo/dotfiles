@@ -14,3 +14,4 @@ install_from_npm vscode-css-languageserver-bin css-languageserver
 install_from_npm vscode-html-languageserver-bin html-languageserver
 install_from_npm vue-language-server vls 
 install_from_npm javascript-typescript-langserver javascript-typescript-stdio
+install_from_npm typescript-language-server typescript-language-server
