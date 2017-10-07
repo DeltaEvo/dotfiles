@@ -10,6 +10,7 @@ set -q XDG_DATA_HOME
 source $OMF_PATH/init.fish
 
 alias vim=nvim
+alias tmux="tmux -2"
 
 # RLS
 export RUST_SRC_PATH=$HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src
