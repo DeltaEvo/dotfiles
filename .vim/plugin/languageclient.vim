@@ -11,6 +11,8 @@ let g:LanguageClient_serverCommands = {
 	\ 'scss': ['~/.vim/langservers/css-languageserver', '--stdio']
 	\ }
 
+let g:LanguageClient_autoStart = 1
+
 function! LoadSchemas()
 	let schemas = json_decode(system("cat ~/.vim/langservers/schemas.json"))
 	call LanguageClient_notify('json/schemaAssociations', schemas)
