@@ -21,6 +21,7 @@ Plug 'vim-scripts/AfterColors.vim'
 Plug 'ludovicchabant/vim-gutentags'
 " Automatically adjusts 'shiftwidth' and 'expandtab' heuristically based on the current file
 Plug 'tpope/vim-sleuth'
+Plug 'majutsushi/tagbar'
 
 " tmux
 Plug 'tmux-plugins/vim-tmux'

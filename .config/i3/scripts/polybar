@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+for screen in $(xrandr  | grep " connected" | cut -d ' ' -f 1)
+do
+ MONITOR=$screen polybar top &
+done

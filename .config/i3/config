@@ -223,7 +223,7 @@ gaps inner 4
 gaps outer 2
 
 # Bar
-exec_always --no-startup-id killall polybar; polybar top
+exec_always --no-startup-id killall polybar; ~/.config/i3/scripts/polybar
 
 #Start albert
 exec_always --no-startup-id kill $( pidof albert ); albert

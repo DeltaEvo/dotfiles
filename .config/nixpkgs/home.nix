@@ -6,7 +6,7 @@ let
 in
 {
   home.packages = with pkgs; [
-#    arc-theme
+    arc-theme
     htop
     ntfs3g
     nodejs-8_x
