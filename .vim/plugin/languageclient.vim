@@ -2,7 +2,7 @@ set hidden
 
 let g:LanguageClient_serverCommands = {
 	\ 'rust': ['rustup', 'run', 'nightly', 'rls'],
-	\ 'javascript': ['~/.vim/langservers/javascript-typescript-stdio'],
+	\ 'javascript': ['~/.vim/langservers/typescript-language-server', '--stdio', '--tsserver-path', '~/.vim/langservers/tsserver'],
 	\ 'typescript': ['~/.vim/langservers/typescript-language-server', '--stdio', '--tsserver-path', 'node_modules/.bin/tsserver'],
 	\ 'vue': ['~/.vim/langservers/vls'],
 	\ 'html': ['~/.vim/langservers/html-languageserver', '--stdio'],
