@@ -14,7 +14,7 @@ let g:LanguageClient_serverCommands = {
 let g:LanguageClient_autoStart = 1
 
 function! LoadSchemas()
-	let schemas = json_decode(system("cat ~/.vim/langservers/schemas.json"))
+	let schemas = json_decode(join(readfile($HOME . "/.vim/langservers/schemas.json"), "\n"))
 	call LanguageClient_notify('json/schemaAssociations', schemas)
 endfunction
 
@@ -28,3 +28,15 @@ augroup LanguageClient_config
 	autocmd User LanguageClientStarted setlocal signcolumn=yes
 	autocmd User LanguageClientStopped setlocal signcolumn=auto
 augroup END
+
+augroup LanguageClient_signature
+	autocmd!
+	autocmd BufEnter * let b:Plugin_LanguageClient_started = 0
+	autocmd User LanguageClientStarted let b:Plugin_LanguageClient_started = 1
+	autocmd User LanguageClientStopped let b:Plugin_LanguageClient_started = 0
+	autocmd CursorMoved * if b:Plugin_LanguageClient_started | call LanguageClient_textDocument_signatureHelp() | endif
+augroup END
+
+nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
