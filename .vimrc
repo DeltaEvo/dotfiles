@@ -9,6 +9,7 @@ call plug#begin('~/.vim/bundles')
 call plug#end()
 
 syntax on
+set termguicolors
 colorscheme space-vim-dark
 
 " Transparent background
@@ -19,6 +20,7 @@ set relativenumber
 set number
 set autoindent
 set tabstop=2
+set shiftwidth=2
 set list lcs=tab:\|\ 
 set cursorcolumn
 set cursorline
