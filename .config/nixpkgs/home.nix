@@ -1,12 +1,13 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 let 
   polybar = pkgs.polybar.override { i3GapsSupport = true; githubSupport = true; mpdSupport = true; };
   minecraft = pkgs.minecraft.override { useAlsa = true; };
+  python3 = pkgs.python36.withPackages (ps : [ps.numpy]);
+  sysconfig = (import <nixpkgs/nixos> {}).config;
 in
 {
-  home.packages = with pkgs; [
-    arc-theme
+  home.packages = with pkgs; ([
     htop
     ntfs3g
     nodejs-8_x
@@ -17,36 +18,38 @@ in
     sshpass
     psmisc
     pciutils
-    glxinfo
     tor
     torsocks
-    konsole
-    albert
-    polybar
     fortune
     ponysay
-    chromium
-    thunderbird
     rustup
+    wget
+    valgrind
+    cmatrix
+    unrar
+    unzip
     neovim
+    universal-ctags
+    python3
+  ] ++ pkgs.lib.optionals sysconfig.services.xserver.enable [
+    arc-theme
+    glxinfo
+    albert
+    units
+    polybar
     vscode
     steam
     discord
     tdesktop
     minecraft
     yubikey-personalization-gui
-    wget
     yubioath-desktop
-    valgrind
-    cmatrix
-    unrar
-    unzip
     spotify
     lxqt.qterminal
-    universal-ctags
     conky
     i3lock
-  ];
+    firefox-devedition-bin
+  ]);
   gtk = {
     enable = true;
     themeName = "Arc-Dark";

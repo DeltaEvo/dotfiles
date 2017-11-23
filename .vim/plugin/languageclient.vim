@@ -8,10 +8,13 @@ let g:LanguageClient_serverCommands = {
 	\ 'html': ['~/.vim/langservers/html-languageserver', '--stdio'],
 	\ 'json': ['~/.vim/langservers/json-languageserver', '--stdio'],
 	\ 'css': ['~/.vim/langservers/css-languageserver', '--stdio'],
-	\ 'scss': ['~/.vim/langservers/css-languageserver', '--stdio']
+	\ 'scss': ['~/.vim/langservers/css-languageserver', '--stdio'],
+	\ 'c': ['~/.vim/langservers/cquery', '--language-server'],
+	\ 'cpp': ['~/.vim/langservers/cquery', '--language-server']
 	\ }
 
 let g:LanguageClient_autoStart = 1
+let g:LanguageClient_loadSettings = 1
 
 function! LoadSchemas()
 	let schemas = json_decode(join(readfile($HOME . "/.vim/langservers/schemas.json"), "\n"))
@@ -27,14 +30,6 @@ augroup LanguageClient_config
 	autocmd!
 	autocmd User LanguageClientStarted setlocal signcolumn=yes
 	autocmd User LanguageClientStopped setlocal signcolumn=auto
-augroup END
-
-augroup LanguageClient_signature
-	autocmd!
-	autocmd BufEnter * let b:Plugin_LanguageClient_started = 0
-	autocmd User LanguageClientStarted let b:Plugin_LanguageClient_started = 1
-	autocmd User LanguageClientStopped let b:Plugin_LanguageClient_started = 0
-	autocmd CursorMoved * if b:Plugin_LanguageClient_started | call LanguageClient_textDocument_signatureHelp() | endif
 augroup END
 
 nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
