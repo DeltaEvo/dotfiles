@@ -31,8 +31,13 @@ in
     neovim
     universal-ctags
     python3
+    gcc
+    gnumake
+    cmake
+    pkgconfig
   ] ++ pkgs.lib.optionals sysconfig.services.xserver.enable [
     arc-theme
+    papirus-icon-theme
     glxinfo
     albert
     units
@@ -53,5 +58,6 @@ in
   gtk = {
     enable = true;
     themeName = "Arc-Dark";
+    iconThemeName = "Papirus-Dark";
   };
 }

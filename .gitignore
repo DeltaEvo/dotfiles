@@ -50,6 +50,9 @@
 !.Xresources
 !.Xresources.d/
 
+# include .xprofile
+!.xprofile
+
 # include fonts
 !/.local
 /.local/*
