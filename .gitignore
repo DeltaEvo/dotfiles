@@ -18,9 +18,8 @@
 !.config/nixpkgs
 
 # i3
-!.config/albert/
+!.config/albert/albert.conf
 !.config/i3/
-!.config/i3blocks/
 !.wallpaper.png
 
 # vim and neovim

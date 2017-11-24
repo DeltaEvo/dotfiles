@@ -46,7 +46,7 @@ in
     steam
     discord
     tdesktop
-    minecraft
+    #    minecraft
     yubikey-personalization-gui
     yubioath-desktop
     spotify
