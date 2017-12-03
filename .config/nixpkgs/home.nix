@@ -32,6 +32,7 @@ in
     universal-ctags
     python3
     gcc
+    gdb
     gnumake
     cmake
     pkgconfig

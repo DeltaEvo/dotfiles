@@ -24,3 +24,13 @@ set shiftwidth=2
 set list lcs=tab:\|\ 
 set cursorcolumn
 set cursorline
+set pastetoggle=<leader>z
+
+let mapleader = ","
+
+" Mappings
+nnoremap <Space> za
+noremap <C-l> <C-w>l
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
