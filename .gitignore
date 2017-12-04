@@ -26,6 +26,7 @@
 !.config/nvim
 !.vim/
 !.vimrc
+.vim/.netrwhist
 # exclude bundles
 .vim/bundles/
 .vim/langservers/*
