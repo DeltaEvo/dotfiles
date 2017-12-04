@@ -12,6 +12,7 @@ Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tpope/vim-vinegar'
 " Git wrapper
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 
 " Completion {{{1
 Plug 'roxma/nvim-completion-manager', { 'do': ':UpdateRemotePlugins' }
