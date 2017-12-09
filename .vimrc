@@ -8,6 +8,12 @@ call plug#begin('~/.vim/bundles')
 	source ~/.vim/plugins.vim
 call plug#end()
 
+" AutoInstall plugins
+autocmd VimEnter *
+	\  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+	\|   PlugInstall --sync | q
+	\| endif
+
 syntax on
 set termguicolors
 colorscheme space-vim-dark

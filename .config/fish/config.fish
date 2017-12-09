@@ -14,6 +14,7 @@ alias tmux="tmux -2"
 
 # RLS
 export RUST_SRC_PATH=$HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src
+export GOPATH=$HOME/.go
 set PATH ~/.npm-global/bin $PATH
 
 

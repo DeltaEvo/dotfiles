@@ -7,12 +7,27 @@ Plug 'liuchengxu/space-vim-dark'
 Plug 'mhinz/vim-startify'
 " File icons
 Plug 'ryanoasis/vim-devicons'
+" Tag bar
+Plug 'majutsushi/tagbar'
+
+" Enhancements {{{1
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 " File Manager
 Plug 'tpope/vim-vinegar'
 " Git wrapper
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+" SudoWrite and other usefull commands
+Plug 'tpope/vim-eunuch'
+" Automatically adjusts 'shiftwidth' and 'expandtab' heuristically based on the current file
+Plug 'tpope/vim-sleuth'
+" Better ga
+Plug 'tpope/vim-characterize'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'easymotion/vim-easymotion'
+
 
 " Completion {{{1
 Plug 'roxma/nvim-completion-manager', { 'do': ':UpdateRemotePlugins' }
@@ -31,11 +46,6 @@ Plug 'honza/vim-snippets'
 Plug 'vim-scripts/AfterColors.vim'
 " Manage tags file
 Plug 'ludovicchabant/vim-gutentags'
-" Automatically adjusts 'shiftwidth' and 'expandtab' heuristically based on the current file
-Plug 'tpope/vim-sleuth'
-" Tag bar
-Plug 'majutsushi/tagbar'
-Plug 'easymotion/vim-easymotion'
 
 " Tmux {{{1
 Plug 'tmux-plugins/vim-tmux'
