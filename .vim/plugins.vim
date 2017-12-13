@@ -11,7 +11,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'majutsushi/tagbar'
 
 " Enhancements {{{1
-Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 " File Manager
 Plug 'justinmk/vim-dirvish'
 " Git wrapper
