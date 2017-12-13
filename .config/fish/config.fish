@@ -17,5 +17,4 @@ export RUST_SRC_PATH=$HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/l
 export GOPATH=$HOME/.go
 set PATH ~/.npm-global/bin $PATH
 
-
 fish_vi_key_bindings
