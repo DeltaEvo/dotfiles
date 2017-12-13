@@ -13,7 +13,7 @@ Plug 'majutsushi/tagbar'
 " Enhancements {{{1
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 " File Manager
-Plug 'tpope/vim-vinegar'
+Plug 'justinmk/vim-dirvish'
 " Git wrapper
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
@@ -27,6 +27,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'easymotion/vim-easymotion'
+Plug 'bronson/vim-visual-star-search'
 
 
 " Completion {{{1

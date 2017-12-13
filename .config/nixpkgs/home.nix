@@ -45,7 +45,7 @@ in
     polybar
     vscode
     steam
-    discord
+    #    discord
     tdesktop
     #    minecraft
     yubikey-personalization-gui
