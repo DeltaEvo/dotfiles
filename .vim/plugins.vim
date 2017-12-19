@@ -29,13 +29,16 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'easymotion/vim-easymotion'
 Plug 'bronson/vim-visual-star-search'
+Plug 'machakann/vim-highlightedyank'
 
 
 " Completion {{{1
 Plug 'roxma/nvim-completion-manager', { 'do': ':UpdateRemotePlugins' }
 " LSP Protocol
-Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
-
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'make release'
+    \ }
 " Debug {{{1
 Plug 'critiqjo/lldb.nvim', { 'for': ['rust'] }
 
@@ -59,5 +62,8 @@ Plug 'posva/vim-vue'
 Plug 'rust-lang/rust.vim'
 Plug 'LnL7/vim-nix'
 Plug 'jparise/vim-graphql'
+Plug 'leafgarland/typescript-vim'
+Plug 'ianks/vim-tsx'
 
-
+" Other {{{1
+Plug 'aurieh/discord.nvim', { 'do': ':UpdateRemotePlugins'}

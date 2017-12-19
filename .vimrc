@@ -31,12 +31,17 @@ set list lcs=tab:\|\
 set cursorcolumn
 set cursorline
 set pastetoggle=<leader>z
+set inccommand=split
+set fillchars+=vert:│
 
-let mapleader = ","
+map <Space> <Leader>
 
 " Mappings
-nnoremap <Space> za
+nnoremap <Return> za
 noremap <C-l> <C-w>l
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
+
+" Show help in a vertical tab instead of an horizontal one
+cnoremap help vert bo help

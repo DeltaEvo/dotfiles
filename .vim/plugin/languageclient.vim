@@ -16,6 +16,8 @@ let g:LanguageClient_serverCommands = {
 let g:LanguageClient_autoStart = 1
 let g:LanguageClient_loadSettings = 1
 
+set formatexpr=LanguageClient_textDocument_rangeFormatting()
+
 function! LoadSchemas()
 	let schemas = json_decode(join(readfile($HOME . "/.vim/langservers/schemas.json"), "\n"))
 	call LanguageClient_notify('json/schemaAssociations', schemas)
