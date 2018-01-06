@@ -11,10 +11,13 @@ source $OMF_PATH/init.fish
 
 alias vim=nvim
 alias tmux="tmux -2"
+alias em="emacsclient -t"
+alias emg="emacsclient -c -a emacs"
 
 # RLS
 export RUST_SRC_PATH=$HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src
 export GOPATH=$HOME/.go
 set PATH $GOPATH/bin ~/.npm-global/bin $PATH
+set TERM xterm-256color
 
 fish_vi_key_bindings

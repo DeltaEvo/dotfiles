@@ -10,7 +10,8 @@ let g:LanguageClient_serverCommands = {
 	\ 'css': ['~/.vim/langservers/css-languageserver', '--stdio'],
 	\ 'scss': ['~/.vim/langservers/css-languageserver', '--stdio'],
 	\ 'c': ['~/.vim/langservers/cquery', '--language-server'],
-	\ 'cpp': ['~/.vim/langservers/cquery', '--language-server']
+	\ 'cpp': ['~/.vim/langservers/cquery', '--language-server'],
+	\ 'markdown': ['~/workspace/javascript/markdown-language-server/dist/src/main.js', '--stdio']
 	\ }
 
 let g:LanguageClient_autoStart = 1

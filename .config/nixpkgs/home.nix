@@ -8,6 +8,7 @@ let
 in
 {
   home.packages = with pkgs; ([
+    manpages
     htop
     ntfs3g
     nodejs-8_x
@@ -29,13 +30,14 @@ in
     unrar
     unzip
     neovim
+    emacs
     universal-ctags
     python3
-    gcc
     gdb
     gnumake
     cmake
     pkgconfig
+    clang
   ] ++ pkgs.lib.optionals sysconfig.services.xserver.enable [
     arc-theme
     papirus-icon-theme
@@ -60,5 +62,24 @@ in
     enable = true;
     themeName = "Arc-Dark";
     iconThemeName = "Papirus-Dark";
+  };
+  systemd.user.services.emacsd = {
+    Unit = {
+      Description = "Emacs: the extensible, self-documenting text editor";
+    };
+
+    Service = {
+      Type = "forking";
+      ExecStart = "${pkgs.emacs}/bin/emacs --daemon";
+      ExecReload = "${pkgs.emacs}/bin/emacsclient --eval \"(kill-emacs)\"";
+      Environment = ''
+        PATH=${pkgs.xclip}/bin
+      '';
+      Restart = "always";
+    };
+
+    Install = {
+        WantedBy = [ "default.target" ];
+    };
   };
 }
