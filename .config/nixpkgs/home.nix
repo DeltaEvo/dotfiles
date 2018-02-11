@@ -4,6 +4,7 @@ let
   polybar = pkgs.polybar.override { i3GapsSupport = true; githubSupport = true; mpdSupport = true; };
   minecraft = pkgs.minecraft.override { useAlsa = true; };
   python3 = pkgs.python36.withPackages (ps : [ps.numpy]);
+  winetricks = pkgs.winetricks.override { wine = pkgs.wineStaging; };
   sysconfig = (import <nixpkgs/nixos> {}).config;
 in
 {
@@ -37,8 +38,8 @@ in
     gnumake
     cmake
     pkgconfig
-    clang
   ] ++ pkgs.lib.optionals sysconfig.services.xserver.enable [
+    feh
     arc-theme
     papirus-icon-theme
     glxinfo
@@ -47,8 +48,8 @@ in
     polybar
     vscode
     steam
-    #    discord
-    tdesktop
+#    discord
+#    tdesktop
     minecraft
     yubikey-personalization-gui
     yubioath-desktop
@@ -57,6 +58,8 @@ in
     conky
     i3lock
     firefox-devedition-bin
+    winetricks
+    electrum
   ]);
   gtk = {
     enable = true;
@@ -73,7 +76,7 @@ in
       ExecStart = "${pkgs.emacs}/bin/emacs --daemon";
       ExecReload = "${pkgs.emacs}/bin/emacsclient --eval \"(kill-emacs)\"";
       Environment = ''
-        PATH=${pkgs.xclip}/bin
+        PATH=${pkgs.xclip}/bin:${pkgs.coreutils}/bin
       '';
       Restart = "always";
     };

@@ -57,8 +57,9 @@
 	(linum-mode)
 	(linum-relative-global-mode))
 
-(load-file "~/.emacs.d/elcord/elcord.el")
-(elcord-connect)
+(use-package elcord
+	:init
+	(elcord-mode))
 
 (use-package company
 	:config
@@ -72,8 +73,6 @@
 
 (use-package lsp-mode
 	:after (flycheck)
-	:init
-	(progn (add-hook 'prog-mode-hook 'lsp-mode))
 	(require 'lsp-flycheck)
 	(add-to-list 'flycheck-checkers 'lsp))
 
@@ -105,6 +104,23 @@
 	:after (lsp-mode vue-mode)
 	:init
 	(add-hook 'vue-mode-hook #'lsp-vue-mmm-enable))
+
+(use-package cquery
+	:after (lsp-mode)
+	:config
+	(setq cquery-executable "/home/david/workspace/cpp/cquery/build/release/bin/cquery")
+	:init
+	(add-hook 'c-mode-hook #'lsp-cquery-enable))
+
+(font-lock-add-keywords
+ 'c-mode
+ '(("\\<\\(\\sw+\\) ?(" 1 'font-lock-function-name-face)))
+
+(use-package treemacs
+	:config
+	(progn
+		(use-package treemacs-evil
+			:demand t)))
 
 (setq-default tab-width 2)
 
