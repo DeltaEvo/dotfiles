@@ -121,7 +121,7 @@ assign [class="Code"] $ws4
 assign [class="Steam"] $ws5
 assign [class="discord"] $ws10
 
-for_window [class="floatme"] floating enable
+for_window [title="^floatme$"] floating enable
 
 # Move to workspace
 bindsym $mod+Shift+w move workspace to output left

@@ -1,7 +1,7 @@
 [user]
 	name = Duarte David
 	email = deltaduartedavid@gmail.com
-	signingkey = C5F21D116A0BBFE561AF0621C02812E4FF650B65
+	signingkey = 5F15860A5A94C62CDD1B19D24A8025B0A7C3E9A3
 [core]
 	autocrlf = input
 [receive]

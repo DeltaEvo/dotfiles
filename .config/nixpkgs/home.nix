@@ -40,20 +40,18 @@ in
     pkgconfig
   ] ++ pkgs.lib.optionals sysconfig.services.xserver.enable [
     feh
-    arc-theme
-    papirus-icon-theme
     glxinfo
     albert
     units
     polybar
     vscode
-    steam
-#    discord
+#    steam
+    discord
 #    tdesktop
     minecraft
     yubikey-personalization-gui
     yubioath-desktop
-    spotify
+#    spotify
     lxqt.qterminal
     conky
     i3lock
@@ -63,8 +61,14 @@ in
   ]);
   gtk = {
     enable = true;
-    themeName = "Arc-Dark";
-    iconThemeName = "Papirus-Dark";
+    theme = {
+      package = pkgs.arc-theme;
+      name = "Arc-Dark";
+    };
+    iconTheme = {
+      package = pkgs.papirus-icon-theme;
+      name = "Papirus-Dark";
+    };
   };
   systemd.user.services.emacsd = {
     Unit = {
