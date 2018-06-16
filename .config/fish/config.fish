@@ -12,7 +12,6 @@ source $OMF_PATH/init.fish
 alias tmux="tmux -2"
 alias ec="emacsclient -t"
 alias ecw="emacsclient -c -a emacs"
-alias vim=ec
 
 # RLS
 export RUST_SRC_PATH=$HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src

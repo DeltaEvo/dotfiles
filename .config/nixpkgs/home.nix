@@ -52,7 +52,7 @@ in
     yubikey-personalization-gui
     yubioath-desktop
 #    spotify
-    lxqt.qterminal
+    hyper
     conky
     i3lock
     firefox-devedition-bin
@@ -68,25 +68,6 @@ in
     iconTheme = {
       package = pkgs.papirus-icon-theme;
       name = "Papirus-Dark";
-    };
-  };
-  systemd.user.services.emacsd = {
-    Unit = {
-      Description = "Emacs: the extensible, self-documenting text editor";
-    };
-
-    Service = {
-      Type = "forking";
-      ExecStart = "${pkgs.emacs}/bin/emacs --daemon";
-      ExecReload = "${pkgs.emacs}/bin/emacsclient --eval \"(kill-emacs)\"";
-      Environment = ''
-        PATH=${pkgs.xclip}/bin:${pkgs.coreutils}/bin
-      '';
-      Restart = "always";
-    };
-
-    Install = {
-        WantedBy = [ "default.target" ];
     };
   };
 }
