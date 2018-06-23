@@ -12,7 +12,7 @@ in
     manpages
     htop
     ntfs3g
-    nodejs-8_x
+    nodejs-9_x
     tmux
     acpi
     powertop
