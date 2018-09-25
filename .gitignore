@@ -22,6 +22,10 @@
 !.config/i3/
 !.wallpaper.png
 
+# awesomevm
+
+!.config/awesome
+
 # vim and neovim
 !.config/nvim
 !.vim/
